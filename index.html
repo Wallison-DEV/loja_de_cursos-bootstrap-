@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap  - Trabalho 2</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        #header{
+            background-color: #350042;
+            color: #fff;
+            padding: 16px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        button{
+            margin-top: 16px;
+        }
+        .container{
+            padding: 24px;
+        }
+        body{
+            background-color: #4c005f;
+        }
+        img{
+        max-height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+            <h1>Loja de Cursos</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/imagem1.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/imagem2.avif" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/imagem3.jpg" alt="">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon" data-bs-slide="prev" data-bs-target="#carousel-exemplo"></span>
+            </button>
+            <button type="button" class="carousel-control-next">
+                <span class="carousel-control-next-icon" data-bs-slide="next" data-bs-target="#carousel-exemplo"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Nossos cursos:</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Curso introdução à programação Web
+                    </div>
+                    <div class="card-body">
+                        Neste curso você aprenderá todo o conteúdo base da programação Web
+                        <button class="btn btn-primary"  type="button">Tenho interesse</button>
+                    </div>
+                    <div class="card-footer">
+                        12x R$200,00
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Curso Programação Web Intermediário
+                        </div>
+                        <div class="card-body">
+                            <p>Neste curso você aprenderá um conteúdo de nível Intermediário da programação Web</p>
+                            <button class="btn btn-primary"  type="button">Tenho interesse</button>
+                        </div>
+                        <div class="card-footer">
+                            12x R$250,00
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Curso Programação Web Avançado
+                            </div>
+                            <div class="card-body">
+                                Neste curso você aprenderá um conteúdo de nível avançado da programação Web
+                                <button class="btn btn-primary" type="button">Tenho interesse</button>
+                            </div>
+                            <div class="card-footer">
+                                12x R$350,00
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
